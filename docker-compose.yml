@@ -20,6 +20,8 @@ services:
 
   html5up-story:
     image: nginx:alpine
+    ports:
+      - "8000:80"
     volumes:
       - ./html5up-story:/usr/share/nginx/html
     networks:
